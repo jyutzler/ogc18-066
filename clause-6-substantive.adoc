@@ -1,0 +1,27 @@
+[[Clause_Substantive]]
+== Description of Substantive Changes
+
+[NOTE]
+.Instructions (Delete this note).
+===============================================
+This section describes what substantive changes were made in this version, 
+what existing problems/issues it addresses, 
+and what compatibility concerns it causes.
+
+If there are no substantive changes, use the following text:
+There are no substantive changes in this release.
+===============================================
+
+=== (( Change #1 ))
+
+(Text goes here...)
+
+
+=== (( Change #2 ))
+
+(Text goes here...)
+
+
+=== (( Add as needed... ))
+
+(Text goes here...)

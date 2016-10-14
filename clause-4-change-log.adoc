@@ -1,0 +1,53 @@
+[[change-log]]
+== Change Log
+
+=== KEY
+
+* Issue#: Issue in GitHub
+* PR#: Pull Request in GitHub
+
+* Type: 
+** A=Administrative
+** S=Substantive
+** C=Critical
+
+See Section 5 for more information on critical changes and 
+Section 6 for more information on substantive changes.
+
+* Section: Section number in the updated document
+* Description: Brief text describing the change
+* Purpose: the reason for the change, such as:
+** Clarity
+** Consistency
+** Interoperability
+** Perfunctory
+** Readability
+** Usability
+
+
+=== Change Table
+[NOTE]
+.Instructions (Delete this note). 
+====
+The table provides a summary of what changes were made in this version.
+Replace the table rows with the entries from your project.
+====
+
+[[table_change_log]]
+.Change Log
+[cols=",,,,,",options="header"]
+|=======================================================================
+|Issue#      |PR#     |Type                 |Section |Description |Purpose
+|https://github.com/opengeospatial/geopackage/issues/213[213]   
+|https://github.com/opengeospatial/geopackage/pulls/227[227]
+|A
+|Annex B.2
+|Add new terms and definitions
+|Clarity
+|https://github.com/opengeospatial/geopackage/issues/214[214]   
+|https://github.com/opengeospatial/geopackage/pulls/219[219]
+|A
+|Annex B.11-13
+|Update UML diagrams to show DATETIME where appropriate
+|Consistency
+|=======================================================================

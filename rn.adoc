@@ -21,7 +21,7 @@ Reference URL for this document: http://www.opengis.net/doc/PER/t13-((xxx))
 
 Category: Release Notes
 
-Editor: ((editor full name))
+Editor: Jeff Yutzler
 
 Title: [big]#Release Notes for GeoPackage v1.2#
 
@@ -35,7 +35,7 @@ include::clause-2-references.adoc[]
 
 include::clause-3-terms.adoc[]
 
-include::clause-4-overview.adoc[]
+include::clause-4-change-log.adoc[]
 
 include::clause-5-critical.adoc[]
 

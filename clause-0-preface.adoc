@@ -4,8 +4,6 @@
 
 *COPYRIGHT*
 
-[comment] this is a comment
-
 Copyright © 2016 Open Geospatial Consortium.
 To obtain additional rights of use, visit http://www.opengeospatial.org/
 

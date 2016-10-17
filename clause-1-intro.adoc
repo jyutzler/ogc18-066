@@ -10,7 +10,7 @@ GeoPackage 1.2 is a minor revision to version 1.1. The minor revision designatio
 
 All changes were all managed via the GeoPackage GitHub repository. All substantive issues and most administrative issues were raised in the GitHub Issue Tracker and discussed by the SWG. Once the issue was resolved, a pull request was generated and merged into the repository. Many administrative issues such as typos were corrected directly through a pull request.
 
-A large number of the changes in this version were produced as a result of two OGC initiatives, the GeoPackage Elevation Extension Interoperability Experiment (see <<1>>) and Testbed 12 (see <<2>>). 
+A large number of the changes in this version were produced as a result of two OGC initiatives, the GeoPackage Elevation Extension Interoperability Experiment (see <<B1>>) and Testbed 12 (see <<B2>>). 
 
 ===	Document contributor contact points
 
@@ -26,7 +26,7 @@ All questions regarding this document should be directed to the editor or the co
 
 
 === Future Work
-(( i.e. "No future work is planned to this document." or  "It is expected that this document may result in changes in other documents." ))
+No future work is planned to this document.
 
 === Foreword
 

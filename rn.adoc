@@ -7,7 +7,7 @@
 :sectanchors:
 :source-highlighter: pygments
 
-= Testbed-13 (( Title of ER ))
+= Release Notes for OGC GeoPackage Encoding Standard v1.2
 
 Publication Date: 2017-mm-dd
 
@@ -15,23 +15,18 @@ Approval Date: 2017-mm-dd
 
 Posted Date: 2017-((xx-xx))
 
-Reference number of this document: OGC 17-((NNNrN))
+Reference number of this document: OGC 16-126
 
 Reference URL for this document: http://www.opengis.net/doc/PER/t13-((xxx))
 
-Category: Public Engineering Report
+Category: Release Notes
 
 Editor: ((editor full name))
 
-Title: [big]#Release Notes for (( Standard and Version Number ))#
+Title: [big]#Release Notes for GeoPackage v1.2#
 
 ''''
 
-////
-Organize your ER includes
-The includes down to the clause-solution should not be modified here.
-You will need to modify each file as appropriate
-////
 include::clause-0-preface.adoc[]
 
 include::clause-1-intro.adoc[]

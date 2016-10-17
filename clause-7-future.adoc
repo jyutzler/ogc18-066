@@ -1,11 +1,11 @@
 [[Clause_FutureWork]]
 == Future Work
 
-[NOTE]
-.Instructions (Delete this note). 
-===============================================
-This section explains any topics that were deferred to future activities. 
-===============================================
+=== Multi-resolution Vector Data (https://github.com/opengeospatial/geopackage/issues/220[220])
+An approach has been developed for storing geometries for multiple resolutions. However, it was determined to be premature to add this approach to the standard as an extension. It is being considered for OGC Testbed 13.
 
+=== Breaking Changes
+Changes that were considered to be "breaking" or had great risk to interoperability were rejected for this release. These issues may be found in GitHub at https://github.com/opengeospatial/geopackage/milestone/11.
 
-(Text goes here...)
+* https://github.com/opengeospatial/geopackage/issues/229[229]: Inconsistent naming gpkg_contents(identifier) / gpkg_data_columns (name)
+* https://github.com/opengeospatial/geopackage/issues/230[230]: `gpkg_contents` should have title column

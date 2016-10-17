@@ -1,27 +1,4 @@
 [[Clause_Critical]]
 == Description of Critical Changes
 
-[NOTE]
-.Instructions (Delete this note).
-===============================================
-This section describes what critical changes were made in this version, 
-what existing problems/issues it addresses, 
-and what compatibility concerns it causes.
-
-If there are no critical changes, use the following text:
 There are no critical changes in this release.
-===============================================
-
-=== (( Change #1 ))
-
-(Text goes here...)
-
-
-=== (( Change #2 ))
-
-(Text goes here...)
-
-
-=== (( Add as needed... ))
-
-(Text goes here...)

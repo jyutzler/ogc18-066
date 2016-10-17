@@ -38,31 +38,13 @@ toc::[]
 
 <<<<
 
-[NOTE]
-.USER GUIDES (Please Delete this Note)
-=====================================================================
- Anything inside of Double Parentheticals (( )) should be edited or removed. Do not modify Double or Single Square Brackets "[".
-
- The AsciidocFX User Guide is available from their GitHub Page:
-   https://github.com/asciidocfx/AsciidocFX
-
- The ASCIIDOC User Guide is available at:
-   http://www.methods.co.nz/asciidoc/userguide.html
-
- A good AsciiDoctor Guide for reference is:
-   http://asciidoctor.org/docs/user-manual
-
-=====================================================================
-
-
 .[big]*Preface*
 
-This document provides the set of revision notes for the existing (( standard )) version (( version number )) ( OGC (( OGC document number )) ) and does not modify that standard.
+This document provides the set of revision notes for the existing GeoPackage version 1.2 (OGC 12-128r13) and does not modify that standard.
 
 This document was approved by the OGC membership on (( approval date )). As a result of the OGC Standards Working Group (SWG) process, there were a number of edits and enhancements made to this standard. This document provides the details of those edits, deficiency corrections, and enhancements. It also documents those items that have been deprecated. Finally, this document provides implementations details related to issues of backwards compatibility.
 
 ((Insert any other introductory notes here))
 
 .[big]*Keywords*
-ogcdocs, testbed-12, (( SOAP, Web services etc. ))
-
+ogcdoc, geopackage, sqlite, raster, tiles, vector, feature, data, storage, exchange, mobile, smartphone, tablet

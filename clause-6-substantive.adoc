@@ -1,27 +1,25 @@
 [[Clause_Substantive]]
 == Description of Substantive Changes
 
-[NOTE]
-.Instructions (Delete this note).
-===============================================
-This section describes what substantive changes were made in this version, 
-what existing problems/issues it addresses, 
-and what compatibility concerns it causes.
+=== 221 Adding Attributes Section
+A strict read of GeoPackage v1.1 does not allow non-spatial attribute values. However, in practice data providers routinely need to deliver data that does not contain geometry properties. Requiring any GeoPackage that contains non-spatial tables to be declared and documented as an "Extended GeoPackage" is not reasonable and does not promote interoperability. Therefore, the specification has been modified to allow non-spatial attribute tables in a basic GeoPackage. This change is considered to be low-risk because it creates a new encoding option that would be ignored by previous versions of the standard.
 
-If there are no substantive changes, use the following text:
-There are no substantive changes in this release.
-===============================================
+=== 234 Deprecate Requirement #69
+It is difficult, if not impossible, to comply with Req 69 "SQL functions that operate on GeoPackageBinary geometries as specified in other extensions SHALL operate correctly on the non-linear geometries specified in this extension." because the functions could have been loaded via an extension such SpatiaLite which cannot be changed, and does not support the non-linear geometries. The removal of this requirement will allow for interoperable storage and retrieval of the geometries, while not requiring but allowing existing functions to work with the geometries.
 
-=== (( Change #1 ))
+=== 235 Deprecate Extensions F.2, F.4, and F.5
+After a careful review (see <<2>>), the GeoPackage SWG agreed to remove the “User Defined Geometry Types Extension of GeoPackageBinary Geometry Encoding” extension from the encoding standard for the following reasons:
 
-(Text goes here...)
+* The geometry encoding is not specified in the extension and therefore a supplemental document explaining the encoding would be required. In the absence of this document, there is no way for an application developer to support this extension and therefore it is not interoperable.
+* Multiple developers could implement the encoding of a new, but similar geometry type such as EllipiticalCurve in different ways.
+* Existing spatial functions will not work with the new geometry types and could potentially cause errors or skip data if used.
 
+The SWG also agreed to remove two addition extensions, “Geometry Type Triggers” and “Geometry SRS ID Triggers”, from the encoding standard as they directly relate to User-Defined Geometry Types Extension and will no longer be required.
 
-=== (( Change #2 ))
+The SWG believes that content contained in these extensions would be better suited in a best practice document. This document could outline how to create a complete and interoperable User Defined Geometry Type Extension, including the details of the geometry encoding and how it can be used with existing spatial functions. This would allow two independent developers to create User-Defined Geometry Type extensions that follow the same template and make it easier for clients of the extensions to adopt.
 
-(Text goes here...)
+=== 236 Column Name for WKT for Coordinate Reference Systems
+The “WKT for Coordinate Reference Systems” extension was designed to align to a new OGC Encoding Standard, OGC 12-063r5 (see <<3>>). The text in GPKG 1.1 (including the column name) incorrectly references “12-163” instead. This change corrects all references to the proper “12-063”. The GeoPackage SWG regrets the error. This change is considered to be low-risk. At worst, implementers may need to populate a redundant column to satisfy clients that use this extension but only support GPKG 1.1.
 
-
-=== (( Add as needed... ))
-
-(Text goes here...)
+=== 242 Add Elevation Extensions to Standard
+After successful completion of the GeoPackage Elevation Extension Interoperability Experiment (as documented in <<2>>), the SWG agreed to add two new extensions to the standard. The "Tiled Gridded Elevation Data, PNG Encoding" extension stores 16-bit tiled gridded elevation data in a GeoPackage as tiles of PNG files. The "Tiled Gridded Elevation Data, TIFF Encoding" extension stores 32-bit tiled gridded elevation data in a GeoPackage as tiles of TIFF files. These extensions both make use of an ancillary data table. The PNG extension uses two columns that are not needed in the TIFF extension. 

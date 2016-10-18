@@ -5,6 +5,4 @@
 
 [[[B1]]] OGC GeoPackage Elevation Extension Interoperability Report, OGC 16-094r3. (2016).
 
-[[[B2]]] OGC Testbed-12 NSG GeoPackage Profile Assessment Engineering Report, OGC 16-038. (2016).
-
-[[[B3]]] Well-known text representation of coordinate reference systems, version 1.0, OGC 12-063r5. (2015).
+[[[B2]]] Well-known text representation of coordinate reference systems, version 1.0, OGC 12-063r5. (2015).

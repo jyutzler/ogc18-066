@@ -13,6 +13,7 @@ A substantive change is a change that alters requirements in a way that is not d
 
 ===	Abbreviated terms
 
+* CITE Compliance, Interoperability, Testing, and Experimentation
 * CRS Coordinate Reference System
 * DDL Database Definition Language
 * GPKG GeoPackage

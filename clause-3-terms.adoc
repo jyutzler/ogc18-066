@@ -9,7 +9,7 @@ An administrative change is a change that does not alter the abstract tests for 
 A critical change is a change that alters requirements in a way that is known to cause reverse compatibility issues. 
 
 === substantive change
-A substantive change is a change that laters requirements in a way that is not deemed to have a high risk for causing reverse compatibility issues.
+A substantive change is a change that alters requirements in a way that is not deemed to have a high risk for causing reverse compatibility issues.
 
 ===	Abbreviated terms
 

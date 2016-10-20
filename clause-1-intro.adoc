@@ -8,7 +8,7 @@ Over the course of 2016, the GeoPackage Standards Working Group (SWG) made a num
 
 GeoPackage 1.2 is a minor revision to version 1.1. The minor revision designation is being used because of a number of substantive changes that alter conformance requirements. However, all of these changes were carefully considered for impact on existing implementations. Changes that were considered to have a significant impact were rejected or recast in order to limit their impact. 
 
-All changes were all managed via the GeoPackage GitHub repository. All substantive issues and most administrative issues were raised in the GitHub Issue Tracker and discussed by the SWG. Once the issue was resolved, a pull request was generated and merged into the repository. Many administrative issues such as typos were corrected directly through a pull request.
+All changes were all managed via the GeoPackage GitHub repository. All substantive issues and most administrative issues were raised in the GitHub Issue Tracker and discussed by the SWG. Once the issue was resolved, a pull request was generated and merged into the repository. Some administrative issues such as typos were corrected directly through a commit on the master branch.
 
 A large number of the changes in this version were initiated through official change requests. In addition, a new extension was added as a result of the GeoPackage Elevation Extension Interoperability Experiment (see <<B1>>). 
 

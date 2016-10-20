@@ -127,6 +127,12 @@ See <<Clause_Critical>> for more information on critical changes and
 |Various
 |Typography
 |Readability
+|https://github.com/opengeospatial/geopackage/issues/254[254]   
+|https://github.com/opengeospatial/geopackage/pull/268[268]
+|A
+|2.3.2.1.1
+|Clarifying rules for extensions in Requirement 58
+|Consistency
 |[yellow-background]#https://github.com/opengeospatial/geopackage/issues/255[255]#   
 |[yellow-background]#https://github.com/opengeospatial/geopackage/pull/264[264]#
 |[yellow-background]#S#

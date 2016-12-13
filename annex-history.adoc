@@ -9,4 +9,5 @@
 |October 16, 2016 |J. Yutzler | .2 |all |migration to Asciidoc
 |October 18, 2016 |J. Yutzler | .3 |3, 4, 6|feedback from 10/17 SWG
 |October 19, 2016 |J. Yutzler | .4 |0, 1, 4|review
+|December 13, 2016 |J. Yutzler | .5|4, 6|late additions
 |====================

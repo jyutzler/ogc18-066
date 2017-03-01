@@ -163,4 +163,40 @@ See <<Clause_Critical>> for more information on critical changes and
 |2.2.6.1.2
 |Typography
 |Readability
+|279
+|280
+|A
+|Annex A
+|Correct "WHERE" clause in abstract tests
+|Consistency
+|[yellow-background]#282#
+|[yellow-background]#283#
+|[yellow-background]#S#
+|[yellow-background]#Annex A, Annex D.2#
+|[yellow-background]#Update DDL to ensure conformance tests will pass#
+|[yellow-background]#Consistency#
+|285
+|291
+|A
+|Annex A
+|Update ATS to remove improper tests
+|Consistency
+|286
+|292
+|A
+|2.1.5.1.1, Annex A
+|Add Null column to Table 7, update ATS to use PRAGMAs instead of SQL inspection
+|Consistency
+|288
+|293
+|A
+|Annex A
+|Remove references to SpatiaLite from ATS, update text to indicate where a spatial engine is needed
+|Consistency
+|295
+|296
+|A
+|2.2.6.1.2, 2.2.7.1.2, Annex A
+|Remove "tiles" stipulation in Requirements 39/43 so that extensions can use the tiles tables
+|Consistency
 |=======================================================================

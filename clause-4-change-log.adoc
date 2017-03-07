@@ -193,12 +193,18 @@ See <<Clause_Critical>> for more information on critical changes and
 |Annex A
 |Remove references to SpatiaLite from ATS, update text to indicate where a spatial engine is needed
 |Consistency
-|295
-|296
+|[yellow-background]#295#
+|[yellow-background]#296#
+|[yellow-background]#S#
+|[yellow-background]#2.2.6.1.2, 2.2.7.1.2, Annex A#
+|[yellow-background]#Remove "tiles" stipulation in Requirements 39/43 so that extensions can use the tiles tables#
+|[yellow-background]#Consistency#
+|290
+|307
 |A
-|2.2.6.1.2, 2.2.7.1.2, Annex A
-|Remove "tiles" stipulation in Requirements 39/43 so that extensions can use the tiles tables
-|Consistency
+|Annex A
+|Replace characters like `’` and `”` with ASCII equivalents, other minor formatting
+|Readability
 |[yellow-background]#309#
 |[yellow-background]#312#
 |[yellow-background]#S#

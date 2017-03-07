@@ -31,6 +31,9 @@ The “WKT for Coordinate Reference Systems” extension was designed to align t
 === 282 Updating DDL to Ensure Conformance Tests Will pass (Annex D.2)
 Due to a defect in some versions of SQLite, columns that are set as "PRIMARY KEY AUTOINCREMENT" report that they are allowed to be null (via the notnull column from "PRAGMA table_info") even though technically speaking they will never be null. This was causing conformance test failures. In GeoPackage 1.2 we have updated the DDL to ensure that the columns have the "notnull" attribute set to false. In the conformance tests, the notnull test will be skipped for GeoPackages older than GeoPackage 1.2. However, starting with GeoPackage 1.2, the tests will be in place. This means that when upgrading older GeoPackages to version 1.2, providers may have to repair existing tables to ensure that the compliance tests will pass. === 282 Updating DDL to Ensure Conformance Tests Will pass (Annex D.2)
 
+=== 295 Remove "tiles" Stipulation on Requirements #39 and #43 (2.2.6.1.2, 2.2.7.1.2)
+The way these requirements were originally written, if they were read in a strict way it was not possible to use these tables for a data type other than _tiles_. This prevented certain extensions from being possible. By removing the _tiles_ stipulation, any data type may use these tables (if appropriate) and there must be traceability back to `gpkg_contents`. 
+
 === 309 Deprecate Requirement #9 (1.1.1.2.2)
 This requirement pertains to capabilities of the software library using the GeoPackage. This requirement is out of scope for the GeoPackage Encoding Standard and was therefore deprecated. The associated abstract test was removed.
 

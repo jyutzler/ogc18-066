@@ -1,10 +1,10 @@
 [[Clause_Substantive]]
 == Description of Substantive Changes
 
-=== 221 Adding Attributes Section
-A strict read of GeoPackage v1.1 does not allow non-spatial attribute values. However, in practice data providers routinely need to deliver data that does not contain geometry properties. Requiring any GeoPackage that contains non-spatial tables to be declared and documented as an "Extended GeoPackage" is not reasonable and does not promote interoperability. Therefore, the specification has been modified to allow non-spatial attribute tables in a basic GeoPackage. This change is considered to be low-risk because it creates a new encoding option that would be ignored by previous versions of the standard.
+=== 221 Adding Attributes Section (2.4)
+A strict read of GeoPackage v1.1 does not allow non-spatial attribute values. However, in practice data providers routinely need to deliver data that does not contain geometry properties. Requiring any GeoPackage that contains non-spatial tables to be declared and documented as an "Extended GeoPackage" is not reasonable and does not promote interoperability. Therefore, the standard has been modified to allow non-spatial attribute tables in a basic GeoPackage. This change is considered to be low-risk because it creates a new encoding option that would be ignored by previous versions of the standard.
 
-=== 234 Deprecate Requirement #69
+=== 234 Deprecate Requirement #69 (Annex F.1)
 It was determined that it is difficult, if not impossible, to comply with Req 69 "SQL functions that operate on GeoPackageBinary geometries as specified in other extensions SHALL operate correctly on the non-linear geometries specified in this extension." because the functions could have been loaded via an extension such SpatiaLite which cannot be changed, and does not support the non-linear geometries. The removal of this requirement will allow for interoperable storage and retrieval of the geometries, while not requiring but allowing existing functions to work with the geometries.
 
 === 235 Deprecate Extensions F.2, F.4, and F.5
@@ -18,15 +18,19 @@ The SWG also agreed to remove two addition extensions, “Geometry Type Triggers
 
 The SWG believes that content contained in these extensions would be better suited in a best practice document. This document could outline how to create a complete and interoperable User Defined Geometry Type Extension, including the details of the geometry encoding and how it can be used with existing spatial functions. This would allow two independent developers to create User-Defined Geometry Type extensions that follow the same template and make it easier for clients of the extensions to adopt.
 
-=== 242 Add Elevation Extension to Standard
+=== 242 Add Elevation Extension to Standard (Annex F.11)
 After successful completion of the GeoPackage Elevation Extension Interoperability Experiment (see <<B1>>), the SWG agreed to add a new extension to the standard. The "Tiled Gridded Elevation Data" extension stores tiled gridded elevation data in a GeoPackage. The tiles contain elevation values and may be 16-bit PNG files or 32-bit TIFF files. The extension defines two ancillary data tables, one for coverages and one for tiles. When using the PNG encoding, a scale and offset may be applied. The extension also allows for a TIFF encoding but it constrains many of the TIFF options that are available to simplify development. 
 
-=== 255 Update versioning mechanism, allow for version increments in SQLite header
+=== 255 Update versioning mechanism, allow for version increments in SQLite header (1.1.1.1.1)
 In GeoPackage 1.1 and earlier, Requirement 2 specifies an exact string as the application identifier. This string is also supposed to be added to SQLite's magic.txt file (<<B3>>). The SWG determined that updating this file is unsustainable. Instead, GeoPackage will now use the original application ID (GPKG) and use the user_version header to indicate the version.
 In addition, it is reasonable to for clients designed to comply with a specific version of the standard to interoperate with GeoPackages that comply with a later version. In response, Requirement 2 was reworded to allow for version increments and the associated abstract test was updated. This change should improve interoperability as well as make it more reasonable for GeoPackage producers to pass CITE tests.
 
-=== 258 Column Name for WKT for Coordinate Reference Systems
+=== 258 Column Name for WKT for Coordinate Reference Systems (Annex F.10)
 The “WKT for Coordinate Reference Systems” extension was designed to align to a new OGC Encoding Standard, OGC 12-063r5 (see <<B2>>). The text in GPKG 1.1 (including the column name) incorrectly references “12-163” instead. This change corrects all references to the proper “12-063”. The GeoPackage SWG regrets the error. This change is considered to be low-risk. At worst, implementers may need to populate a redundant column to satisfy clients that use this extension but only support GPKG 1.1.
 
-=== 282 Updating DDL to Ensure Conformance Tests Will pass
-Due to a defect in some versions of SQLite, columns that are set as "PRIMARY KEY AUTOINCREMENT" report that they are allowed to be null (via the notnull column from "PRAGMA table_info") even though technically speaking they will never be null. This was causing conformance test failures. In GeoPackage 1.2 we have updated the DDL to ensure that the columns have the "notnull" attribute set to false. In the conformance tests, the notnull test will be skipped for GeoPackages older than GeoPackage 1.2. However, starting with GeoPackage 1.2, the tests will be in place. This means that when upgrading older GeoPackages to version 1.2, providers may have to repair existing tables to ensure that the compliance tests will pass. 
+=== 282 Updating DDL to Ensure Conformance Tests Will pass (Annex D.2)
+Due to a defect in some versions of SQLite, columns that are set as "PRIMARY KEY AUTOINCREMENT" report that they are allowed to be null (via the notnull column from "PRAGMA table_info") even though technically speaking they will never be null. This was causing conformance test failures. In GeoPackage 1.2 we have updated the DDL to ensure that the columns have the "notnull" attribute set to false. In the conformance tests, the notnull test will be skipped for GeoPackages older than GeoPackage 1.2. However, starting with GeoPackage 1.2, the tests will be in place. This means that when upgrading older GeoPackages to version 1.2, providers may have to repair existing tables to ensure that the compliance tests will pass. === 282 Updating DDL to Ensure Conformance Tests Will pass (Annex D.2)
+
+=== 309 Deprecate Requirement #9 (1.1.1.2.2)
+This requirement pertains to capabilities of the software library using the GeoPackage. This requirement is out of scope for the GeoPackage Encoding Standard and was therefore deprecated. The associated abstract test was removed.
+

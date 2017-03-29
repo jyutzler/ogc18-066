@@ -91,8 +91,8 @@ See <<Clause_Critical>> for more information on critical changes and
 |2.2.7.1.2
 |Rewrite Requirement #53
 |Clarity
-|https://github.com/opengeospatial/geopackage/issues/238[238]   
-|https://github.com/opengeospatial/geopackage/pull/236[236]
+|https://github.com/opengeospatial/geopackage/issues/238[238]  et. al. 
+|https://github.com/opengeospatial/geopackage/pull/236[236] et. al.
 |A
 |Various
 |Typography
@@ -103,7 +103,7 @@ See <<Clause_Critical>> for more information on critical changes and
 |2.3.2.1.1
 |Update description for `definition` column
 |Usability
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/242[242], https://github.com/opengeospatial/geopackage/issues/257[257]#   
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/242[242], et. al.#   
 |[yellow-background]#https://github.com/opengeospatial/geopackage/pull/248[248], et. al.#
 |[yellow-background]#S#
 |[yellow-background]#F.11#
@@ -121,12 +121,6 @@ See <<Clause_Critical>> for more information on critical changes and
 |Annex B.5-6
 |Change Log
 |Perfunctory
-|https://github.com/opengeospatial/geopackage/issues/249[249]   
-|https://github.com/opengeospatial/geopackage/pull/259[259]
-|A
-|Various
-|Typography
-|Readability
 |https://github.com/opengeospatial/geopackage/issues/254[254]   
 |https://github.com/opengeospatial/geopackage/pull/268[268]
 |A
@@ -157,58 +151,40 @@ See <<Clause_Critical>> for more information on critical changes and
 |1.1.1.1.2
 |Eliminate .gpkx option
 |Usability
-|N/A
-|https://github.com/opengeospatial/geopackage/pull/269[269]
-|A
-|2.2.6.1.2
-|Typography
-|Readability
-|279
-|280
+|https://github.com/opengeospatial/geopackage/issues/255[255], https://github.com/opengeospatial/geopackage/issues/279[279] et. al.
+|https://github.com/opengeospatial/geopackage/pull/280[280] et. al.
 |A
 |Annex A
-|Correct "WHERE" clause in abstract tests
+|Update abstract tests to align with requirements
 |Consistency
-|[yellow-background]#282#
-|[yellow-background]#283#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/255[255], https://github.com/opengeospatial/geopackage/issues/282[282]#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/283[283]#
 |[yellow-background]#S#
 |[yellow-background]#Annex A, Annex D.2#
 |[yellow-background]#Update DDL to ensure conformance tests will pass#
 |[yellow-background]#Consistency#
-|285
-|291
-|A
-|Annex A
-|Update ATS to remove improper tests
-|Consistency
 |286
 |292
 |A
 |2.1.5.1.1, Annex A
 |Add Null column to Table 7, update ATS to use PRAGMAs instead of SQL inspection
 |Consistency
-|288
-|293
-|A
-|Annex A
-|Remove references to SpatiaLite from ATS, update text to indicate where a spatial engine is needed
-|Consistency
-|[yellow-background]#295#
-|[yellow-background]#296#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/255[255], https://github.com/opengeospatial/geopackage/issues/295[295]#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/296[296]#
 |[yellow-background]#S#
 |[yellow-background]#2.2.6.1.2, 2.2.7.1.2, Annex A#
 |[yellow-background]#Remove "tiles" stipulation in Requirements 39/43 so that extensions can use the tiles tables#
-|[yellow-background]#Consistency#
-|290
-|307
-|A
-|Annex A
-|Replace characters like `’` and `”` with ASCII equivalents, other minor formatting
-|Readability
-|[yellow-background]#309#
-|[yellow-background]#312#
+|[yellow-background]#Extensibility#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/309[309]#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/312[312]#
 |[yellow-background]#S#
 |[yellow-background]#1.1.1.2.2, Annex A#
 |[yellow-background]#Remove Requirement 9 because it is is a software capability, not a file encoding capability#
 |[yellow-background]#Consistency#
+|https://github.com/opengeospatial/geopackage/issues/314[314]
+|https://github.com/opengeospatial/geopackage/pull/315[315], https://github.com/opengeospatial/geopackage/pull/324[324]
+|A 
+|2, Annex F
+|Use registered requirements numbers instead of auto-generated ones.
+|Consistency
 |=======================================================================

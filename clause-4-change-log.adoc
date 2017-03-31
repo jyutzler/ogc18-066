@@ -157,12 +157,12 @@ See <<Clause_Critical>> for more information on critical changes and
 |Annex A
 |Update abstract tests to align with requirements
 |Consistency
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/282[282]#
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/283[283]#
-|[yellow-background]#S#
-|[yellow-background]#Annex A, Annex D.2#
-|[yellow-background]#Update DDL to ensure conformance tests will pass#
-|[yellow-background]#Consistency#
+|https://github.com/opengeospatial/geopackage/issues/282[282]
+|https://github.com/opengeospatial/geopackage/pull/283[283]
+|S
+|Annex A, Annex D.2
+|Update DDL to enforce that primary keys are not null
+|Consistency
 |286
 |292
 |A

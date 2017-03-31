@@ -151,13 +151,13 @@ See <<Clause_Critical>> for more information on critical changes and
 |1.1.1.1.2
 |Eliminate .gpkx option
 |Usability
-|https://github.com/opengeospatial/geopackage/issues/255[255], https://github.com/opengeospatial/geopackage/issues/279[279] et. al.
+|https://github.com/opengeospatial/geopackage/issues/279[279] et. al.
 |https://github.com/opengeospatial/geopackage/pull/280[280] et. al.
 |A
 |Annex A
 |Update abstract tests to align with requirements
 |Consistency
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/255[255], https://github.com/opengeospatial/geopackage/issues/282[282]#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/282[282]#
 |[yellow-background]#https://github.com/opengeospatial/geopackage/pull/283[283]#
 |[yellow-background]#S#
 |[yellow-background]#Annex A, Annex D.2#
@@ -169,7 +169,7 @@ See <<Clause_Critical>> for more information on critical changes and
 |2.1.5.1.1, Annex A
 |Add Null column to Table 7, update ATS to use PRAGMAs instead of SQL inspection
 |Consistency
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/255[255], https://github.com/opengeospatial/geopackage/issues/295[295]#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/295[295]#
 |[yellow-background]#https://github.com/opengeospatial/geopackage/pull/296[296]#
 |[yellow-background]#S#
 |[yellow-background]#2.2.6.1.2, 2.2.7.1.2, Annex A#

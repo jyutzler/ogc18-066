@@ -187,4 +187,22 @@ See <<Clause_Critical>> for more information on critical changes and
 |2, Annex F
 |Use registered requirements numbers instead of auto-generated ones.
 |Consistency
+|https://github.com/opengeospatial/geopackage/issues/319[319]
+|https://github.com/opengeospatial/geopackage/pull/320[320]
+|A 
+|F.8
+|Editorial review of Metadata Extension
+|Consistency
+|https://github.com/opengeospatial/geopackage/issues/322[322]
+|https://github.com/opengeospatial/geopackage/pull/326[326]
+|A 
+|2.2.3.1.1 Table 11, 2.2.3.1.2
+|Rewrite Requirement 60, specify that columns are jointly unique
+|Clarity
+|https://github.com/opengeospatial/geopackage/issues/332[332]
+|https://github.com/opengeospatial/geopackage/pull/334[334]
+|A 
+|F.10, Table 26
+|Add a default in case extension is present in a file used by an application that doesn't understand it
+|Interoperability
 |=======================================================================

@@ -159,7 +159,7 @@ See <<Clause_Critical>> for more information on critical changes and
 |Consistency
 |https://github.com/opengeospatial/geopackage/issues/282[282]
 |https://github.com/opengeospatial/geopackage/pull/283[283]
-|S
+|A
 |Annex A, Annex D.2
 |Update DDL to enforce that primary keys are not null
 |Consistency
@@ -175,6 +175,12 @@ See <<Clause_Critical>> for more information on critical changes and
 |[yellow-background]#2.2.6.1.2, 2.2.7.1.2, Annex A#
 |[yellow-background]#Remove "tiles" stipulation in Requirements 39/43 so that extensions can use the tiles tables#
 |[yellow-background]#Extensibility#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/301[301]#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/302[302] et. al.#
+|[yellow-background]#S#
+|[yellow-background]#Various#
+|[yellow-background]#Comments from Carl Reed, including but not limited to clarifications on extension mechanism#
+|[yellow-background]#Clarity, Consistency, Readability, Interoperability#
 |[yellow-background]#https://github.com/opengeospatial/geopackage/issues/309[309]#
 |[yellow-background]#https://github.com/opengeospatial/geopackage/pull/312[312]#
 |[yellow-background]#S#
@@ -205,4 +211,34 @@ See <<Clause_Critical>> for more information on critical changes and
 |F.10, Table 26
 |Add a default in case extension is present in a file used by an application that doesn't understand it
 |Interoperability
+|https://github.com/opengeospatial/geopackage/issues/336[336]
+|https://github.com/opengeospatial/geopackage/pull/337[337]
+|A 
+|F.9
+|Editorial review of Schema Extension
+|Consistency
+|https://github.com/opengeospatial/geopackage/issues/341[341]
+|https://github.com/opengeospatial/geopackage/pull/342[342]
+|A 
+|F.3
+|Editorial review of RTree Spatial Index Extension
+|Consistency
+|https://github.com/opengeospatial/geopackage/issues/345[345]
+|https://github.com/opengeospatial/geopackage/pull/346[346]
+|A 
+|F.7
+|Editorial review of WebP Extension
+|Consistency
+|https://github.com/opengeospatial/geopackage/issues/347[347]
+|https://github.com/opengeospatial/geopackage/pull/348[348]
+|A 
+|F.1
+|Editorial review of Non-Linear Geometry Types Extension
+|Consistency
+|https://github.com/opengeospatial/geopackage/issues/351[351]
+|https://github.com/opengeospatial/geopackage/pull/352[352]
+|A 
+|2.2.1
+|Editorial review of Tiles introduction, including adding explicit reference to WMTS in response to official comment from Keith Ryden
+|Consistency
 |=======================================================================

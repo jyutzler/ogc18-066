@@ -12,4 +12,5 @@
 |December 13, 2016 |J. Yutzler | .5|4, 6|late additions
 |March 1, 2017|J. Yutzler| .6|4, 6|approvals from 2/27 SWG
 |April 18, 2017|J. Yutzler| .7|4, 6|approvals prior to SWG vote to return to OAB
+|April 19, 2017|J. Yutzler| .8|4, 6|splitting change log into "pre-comment period" and "post-comment period"
 |====================

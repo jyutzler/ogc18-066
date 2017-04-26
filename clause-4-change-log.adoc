@@ -250,4 +250,10 @@ See <<Clause_Critical>> for more information on critical changes and
 |2.2.1
 |Editorial review of Tiles introduction, including adding explicit reference to WMTS in response to official comment from Keith Ryden
 |Consistency
+|https://github.com/opengeospatial/geopackage/issues/356[356]
+|https://github.com/opengeospatial/geopackage/pull/357[357]
+|A 
+|Annex I
+|Updated normative reference to ISI 19115
+|Perfunctory
 |=======================================================================

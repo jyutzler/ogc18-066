@@ -254,6 +254,6 @@ See <<Clause_Critical>> for more information on critical changes and
 |https://github.com/opengeospatial/geopackage/pull/357[357]
 |A 
 |Annex I
-|Updated normative reference to ISI 19115
+|Updated normative reference to ISO 19115
 |Perfunctory
 |=======================================================================

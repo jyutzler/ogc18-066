@@ -43,5 +43,8 @@ This change caused the SWG to reconsider the purpose of Requirement #17. While t
 ==== 309 Deprecate Requirement #9 (1.1.1.2.2)
 This requirement pertains to capabilities of the software library using the GeoPackage. This requirement is out of scope for the GeoPackage Encoding Standard and was therefore deprecated. The associated abstract test was removed.
 
-==== 319, 336 Adding Requirements for Metadata Extension (Annex F.8) and Schema Extension (Annex F.9)
-In GeoPackage 1.1, the Metadata and Schema sections were demoted to extensions. However, when this was done no requirement was added to specify the rows in `gpkg_extensions` to declare that the extensions are in use. This version corrects this oversight by adding requirements #140 and #141 respectively.
+==== 319, 336, 363 Adding Requirements for Metadata Extension (Annex F.8), Schema Extension (Annex F.9), and CRS WKT Extension (Annex F.10)
+In GeoPackage 1.1, the Metadata and Schema sections were demoted to extensions. However, when this was done no requirement was added to specify the rows in `gpkg_extensions` to declare that the extensions are in use. Similarly, no requirement was added when the CRS WKT Extension was added. This version corrects this oversight by adding requirements #140, #141, and #145 respectively. This is considered a low impact change because most implementers were doing this already.
+
+==== 366 Clarifying Role of Extents in gpkg_contents vs. gpkg_tile_matrix_set
+In the past there has been confusion over the role of the extents in these two tables. In addition to adding informative notes (an administrative change), Requirement #144 was added to mandate that all tiles fall within the extents of the tile matrix set as defined. If this is not done the GeoPackage is not usable anyway so this is a low impact change.

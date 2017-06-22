@@ -103,12 +103,12 @@ See <<Clause_Critical>> for more information on critical changes and
 |2.3.2.1.1
 |Update description for `definition` column
 |Usability
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/242[242], et. al.#   
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/248[248], et. al.#
-|[yellow-background]#S#
-|[yellow-background]#F.11#
-|[yellow-background]#Add Elevation extension to standard#
-|[yellow-background]#Addition#
+|[line-through]#https://github.com/opengeospatial/geopackage/issues/242[242], et. al.#   
+|[line-through]#https://github.com/opengeospatial/geopackage/pull/248[248], et. al.#
+|[line-through]#S#
+|[line-through]#F.11#
+|[line-through]#Add Elevation extension to standard#
+|[line-through]#Addition#
 |https://github.com/opengeospatial/geopackage/issues/243[243]   
 |https://github.com/jyutzler/geopackage/commit/ef2a9a086c581d75ffe2f0a021d37b56a5eee25b[ef2a9a0]
 |A

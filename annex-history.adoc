@@ -14,5 +14,5 @@
 |April 18, 2017|J. Yutzler| .7|4, 6|approvals prior to SWG vote to return to OAB
 |April 19, 2017|J. Yutzler| .8|4, 6|splitting change log into "pre-comment period" and "post-comment period"
 |June 2, 2017|J. Yutzler| .9|4, 6|approvals from 6/2 SWG
-|June 22, 2017|J. Yutzler| .91|4, 6|strikethrough of Elevation Extension
+|June 27, 2017|J. Yutzler| .91|4, 6|strikethrough of Elevation Extension, adding item #358
 |====================

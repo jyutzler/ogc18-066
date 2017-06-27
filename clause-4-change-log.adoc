@@ -103,12 +103,12 @@ See <<Clause_Critical>> for more information on critical changes and
 |2.3.2.1.1
 |Update description for `definition` column
 |Usability
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/242[242], et. al.#   
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/248[248], et. al.#
-|[yellow-background]#S#
-|[yellow-background]#F.11#
-|[yellow-background]#Add Elevation extension to standard#
-|[yellow-background]#Addition#
+|[line-through]#https://github.com/opengeospatial/geopackage/issues/242[242], et. al.#   
+|[line-through]#https://github.com/opengeospatial/geopackage/pull/248[248], et. al.#
+|[line-through]#S#
+|[line-through]#F.11#
+|[line-through]#Add Elevation extension to standard#
+|[line-through]#Addition#
 |https://github.com/opengeospatial/geopackage/issues/243[243]   
 |https://github.com/jyutzler/geopackage/commit/ef2a9a086c581d75ffe2f0a021d37b56a5eee25b[ef2a9a0]
 |A
@@ -250,10 +250,22 @@ See <<Clause_Critical>> for more information on critical changes and
 |2.2.1
 |Editorial review of Tiles introduction, including adding explicit reference to WMTS in response to official comment from Keith Ryden
 |Consistency
-|https://github.com/opengeospatial/geopackage/issues/356[356]
-|https://github.com/opengeospatial/geopackage/pull/357[357]
+|https://github.com/opengeospatial/geopackage/issues/362[362]
+|https://github.com/opengeospatial/geopackage/pull/368[368]
 |A 
-|Annex I
-|Updated normative reference to ISI 19115
-|Perfunctory
+|2.2.5, Annex F.7
+|Editing Requirement 92, adding notes indicating that PNG/JPG tiles (or WebP) can be mixed and matched
+|Clarity
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/363[363]#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/369[369]#
+|[yellow-background]#S# 
+|[yellow-background]#Annex F.10#
+|[yellow-background]#Adding requirement for gpkg_extensions when CRS WKT extension is in use#
+|[yellow-background]#Consistency#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/366[366]#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/367[367]#
+|[yellow-background]#S# 
+|[yellow-background]#2.2.1#
+|[yellow-background]#Clarifying role of extents in gpkg_contents vs. gpkg_tile_matrix_set#
+|[yellow-background]#Clarity#
 |=======================================================================

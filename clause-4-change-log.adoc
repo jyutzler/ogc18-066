@@ -280,4 +280,10 @@ See <<Clause_Critical>> for more information on critical changes and
 |[yellow-background]#2.2.1#
 |[yellow-background]#Clarifying role of extents in gpkg_contents vs. gpkg_tile_matrix_set#
 |[yellow-background]#Clarity#
+|N/A
+|https://github.com/opengeospatial/geopackage/pull/376[376]
+|A 
+|3
+|Added new security consideration related to SQLite
+|Perfunctory
 |=======================================================================

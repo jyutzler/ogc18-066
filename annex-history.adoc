@@ -15,4 +15,5 @@
 |April 19, 2017|J. Yutzler| .8|4, 6|splitting change log into "pre-comment period" and "post-comment period"
 |June 2, 2017|J. Yutzler| .9|4, 6|approvals from 6/2 SWG
 |June 27, 2017|J. Yutzler| .91|4, 6|strikethrough of Elevation Extension, adding item #358
+|July 18, 2017|J. Yutzler| .92|4|adding item #376
 |====================

@@ -274,6 +274,12 @@ See <<Clause_Critical>> for more information on critical changes and
 |[yellow-background]#Annex F.10#
 |[yellow-background]#Adding requirement for gpkg_extensions when CRS WKT extension is in use#
 |[yellow-background]#Consistency#
+|https://github.com/opengeospatial/geopackage/issues/375[375]
+|https://github.com/opengeospatial/geopackage/pull/378[378]
+|A 
+|2.3.2.1.2, Annex A.2.3.1.1
+|Adding explanatory text regarding table name case sensitivity
+|Clarity
 |[yellow-background]#https://github.com/opengeospatial/geopackage/issues/366[366]#
 |[yellow-background]#https://github.com/opengeospatial/geopackage/pull/367[367]#
 |[yellow-background]#S# 

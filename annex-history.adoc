@@ -16,4 +16,5 @@
 |June 2, 2017|J. Yutzler| .9|4, 6|approvals from 6/2 SWG
 |June 27, 2017|J. Yutzler| .91|4, 6|strikethrough of Elevation Extension, adding item #358
 |July 18, 2017|J. Yutzler| .92|4|adding item #376
+|Auugust 1, 2017|J. Yutzler| .93|4|adding item #375
 |====================

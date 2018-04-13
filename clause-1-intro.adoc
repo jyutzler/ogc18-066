@@ -4,13 +4,11 @@
 
 GeoPackage is an open, standards-based, platform-independent, portable, self-describing, compact format for transferring geospatial information.
 
-Over the course of 2016, the GeoPackage Standards Working Group (SWG) made a number of changes to the GeoPackage Encoding Standard Version 1.1 (OGC 12-128r12). These changes have been aggregated into version 1.2 of the GeoPackage Encoding Standard (12-128r13). 
+Over the course of 2017 and 2018, the GeoPackage Standards Working Group (SWG) made a number of changes to the GeoPackage Encoding Standard Version 1.2 (OGC 12-128r14). These changes have been aggregated into version 1.2.1 of the GeoPackage Encoding Standard (12-128r14). 
 
-GeoPackage 1.2 is a minor revision to version 1.1. The minor revision designation is being used because of a number of substantive changes that alter conformance requirements. However, all of these changes were carefully considered for impact on existing implementations. Changes that were considered to have a significant impact were rejected or recast in order to limit their impact. 
+GeoPackage 1.2.1 is a corrigendum revision to version 1.2.0. The corrigendum revision designation is being used because none of the changes alter conformance requirements. However, all of these changes were carefully considered for impact on existing implementations. Changes that were considered to have a significant impact were rejected or recast in order to limit their impact. 
 
 All changes were all managed via the GeoPackage GitHub repository. All substantive issues and most administrative issues were raised in the GitHub Issue Tracker and discussed by the SWG. Once the issue was resolved, a pull request was generated and merged into the repository. Some administrative issues such as typos were corrected directly through a commit on the master branch.
-
-A large number of the changes in this version were initiated through official change requests. In addition, a new extension was added as a result of the GeoPackage Elevation Extension Interoperability Experiment (see <<B1>>). 
 
 ===	Document contributor contact points
 
@@ -28,6 +26,9 @@ All questions regarding this document should be directed to the editor or the co
 === Future Work
 No future work is planned to this document.
 
+// *****************************************************************************
+// please don't change the foreword
+// *****************************************************************************
 === Foreword
 
 Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.

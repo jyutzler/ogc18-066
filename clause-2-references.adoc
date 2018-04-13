@@ -5,4 +5,4 @@ The following normative documents are referenced in this document.
 
 .NOTE: 	Only normative standards are referenced here, e.g. OGC, ISO or other SDO standards. All other references are listed in the bibliography.
 
-* OGC 12-128r13, OGC® GeoPackage Encoding Standard, version 1.2
+* OGC 12-128r15, OGC® GeoPackage Encoding Standard, version 1.2.1

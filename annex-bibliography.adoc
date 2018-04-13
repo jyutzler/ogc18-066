@@ -2,9 +2,3 @@
 [[Bibliography]]
 = Bibliography
 
-
-[[[B1]]] OGC GeoPackage Elevation Extension Interoperability Report, OGC 16-094r3. (2016).
-
-[[[B2]]] Well-known text representation of coordinate reference systems, version 1.0, OGC 12-063r5. (2015).
-
-[[[B3]]] SQLite magic.txt, http://www.sqlite.org/src/artifact/8273bf49ba3b0c85, June 16, 2014.

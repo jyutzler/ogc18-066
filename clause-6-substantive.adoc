@@ -1,51 +1,36 @@
 [[Clause_Substantive]]
 == Description of Substantive Changes
 
-=== Pre-Comment Period
-==== 221 Adding Attributes Section (2.4)
-Non-spatial attribute data are sets (or tuples or rows) of observations that may not have an explicit geometry property. A strict read of GeoPackage v1.1 does not allow non-spatial attribute values. However, in practice data providers routinely need to deliver data that does not contain geometry properties. Requiring any GeoPackage that contains non-spatial tables to be declared and documented as an "Extended GeoPackage" is not reasonable and does not promote interoperability. Therefore, the standard has been modified to allow this data to be stored in user-define attribute tables as part of a basic GeoPackage. This change is considered to be low-risk because it creates a new encoding option that would be ignored by previous versions of the standard.
+=== Removing erroneous part of trigger (Annex F.3)
+The `update3` trigger for the RTree Spatial Index extension needs to have the “of ” portion struck. As originally written, the `update3` trigger will only fire when the geometry is actually updated because of the “of ” clause – the key action this trigger is designed to handle is when the ID is changed – it can also deal with a geometry change at the same time – but as written will not fire if only the ID is changed.
 
-==== 234 Deprecate Requirement #69 (Annex F.1)
-It was determined that it is difficult, if not impossible, to comply with Req 69 "SQL functions that operate on GeoPackageBinary geometries as specified in other extensions SHALL operate correctly on the non-linear geometries specified in this extension." because the functions could have been loaded via an extension such SpatiaLite which cannot be changed, and does not support the non-linear geometries. The removal of this requirement will allow for interoperable storage and retrieval of the geometries, while not requiring but allowing existing functions to work with the geometries.
+This has not surfaced in the field because most SQLite applications never change the internal id value of an existing row. However, by issuing this correction, we prevent an problem that would be hard to debug in the field.
 
-==== 235 Deprecate Extensions F.2, F.4, and F.5
-The GeoPackage SWG agreed to remove the “User Defined Geometry Types Extension of GeoPackageBinary Geometry Encoding” extension from the encoding standard for the following reasons:
+The executable test suite for GeoPackage has been updated to accept either the original or corrected version of the trigger for GeoPackage versions 1.2.0 and earlier. Versions 1.2.1 and later are required to use the corrected trigger.
 
-* The geometry encoding is not specified in the extension and therefore a supplemental document explaining the encoding would be required. In the absence of this document, there is no way for an application developer to support this extension and therefore it is not interoperable.
-* Multiple developers could implement the encoding of a new, but similar geometry type such as EllipiticalCurve in different ways.
-* Existing spatial functions will not work with the new geometry types and could potentially cause errors or skip data if used.
+==== Original Trigger
+ CREATE TRIGGER rtree_<t>_<c>_update3 AFTER UPDATE OF <c> ON <t>
+   WHEN OLD.<i> != NEW.<i> AND
+        (NEW.<c> NOTNULL AND NOT ST_IsEmpty(NEW.<c>))
+ BEGIN
+   DELETE FROM rtree_<t>_<c> WHERE id = OLD.<i>;
+   INSERT OR REPLACE INTO rtree_<t>_<c> VALUES (
+     NEW.<i>,
+     ST_MinX(NEW.<c>), ST_MaxX(NEW.<c>),
+     ST_MinY(NEW.<c>), ST_MaxY(NEW.<c>)
+   );
+ END;
 
-The SWG also agreed to remove two addition extensions, “Geometry Type Triggers” and “Geometry SRS ID Triggers”, from the encoding standard as they directly relate to User-Defined Geometry Types Extension and will no longer be required.
-
-The SWG believes that content contained in these extensions would be better suited in a best practice document. This document could outline how to create a complete and interoperable User Defined Geometry Type Extension, including the details of the geometry encoding and how it can be used with existing spatial functions. This would allow two independent developers to create User-Defined Geometry Type extensions that follow the same template and make it easier for clients of the extensions to adopt.
-
-==== [line-through]#242 Add Elevation Extension to Standard (Annex F.11)#
-[line-through]#After successful completion of the GeoPackage Elevation Extension Interoperability Experiment (see <<B1>>), the SWG agreed to add a new extension to the standard. The "Tiled Gridded Elevation Data" extension stores tiled gridded elevation data in a GeoPackage. The tiles contain elevation values and may be 16-bit PNG files or 32-bit TIFF files. The extension defines two ancillary data tables, one for coverages and one for tiles. When using the PNG encoding, a scale and offset may be applied. The extension also allows for a TIFF encoding but it constrains many of the TIFF options that are available to simplify development.#
-The Elevation Extension was removed from GeoPackage 1.2 so that it could be advanced as a separate document. 
-
-==== 255 Update versioning mechanism, allow for version increments in SQLite header (1.1.1.1.1)
-In GeoPackage 1.1 and earlier, Requirement 2 specifies an exact string as the application identifier. This string is also supposed to be added to SQLite's magic.txt file (<<B3>>). The SWG determined that updating this file is unsustainable. Instead, GeoPackage will now use the original application ID (GPKG) and use the user_version header to indicate the version.
-In addition, it is reasonable to for clients designed to comply with a specific version of the standard to interoperate with GeoPackages that comply with a later version. In response, Requirement 2 was reworded to allow for version increments and the associated abstract test was updated. This change should improve interoperability as well as make it more reasonable for GeoPackage producers to pass CITE tests.
-
-==== 258 Column Name for WKT for Coordinate Reference Systems (Annex F.10)
-The “WKT for Coordinate Reference Systems” extension was designed to align to a new OGC Encoding Standard, OGC 12-063r5 (see <<B2>>). The text in GPKG 1.1 (including the column name) incorrectly references “12-163” instead. This change corrects all references to the proper “12-063”. The GeoPackage SWG regrets the error. This change is considered to be low-risk. At worst, implementers may need to populate a redundant column to satisfy clients that use this extension but only support GPKG 1.1.
-
-
-=== Post-Comment Period
-
-==== 295 Remove "tiles" Stipulation on Requirements #39 and #43 (2.2.6.1.2, 2.2.7.1.2)
-The way these requirements were originally written, if they were read in a strict way it was not possible to use these tables for a data type other than _tiles_. This prevented certain extensions from being possible. By removing the _tiles_ stipulation, any data type may use these tables (if appropriate) and there must be traceability back to `gpkg_contents`. 
-
-==== 301 Clarifications on Extension Mechanism and Requirements #4 and #17 (1.1.1.1.3, 2, 2.3.1)
-Dr. Reed provided comments on a wide range of topics. The substantive changes primarily concerned the interoperability of extensions. With the changes to Requirement #4, a *GeoPackage* is now defined as a file conforming to to core standard but with no extensions. An *Extended GeoPackage* is now defined as a file conforming to the core standard and one or more OGC-endorsed extensions. Implementers are still free to produce extensions if they feel they must do so to meet requirements, but externally-produced extensions cannot be endorsed by OGC and therefore GeoPackages containing these extensions will not be considered OGC-compliant.
-
-This change caused the SWG to reconsider the purpose of Requirement #17. While the intent was to ensure interoperability, this requirement had the side-effect of prohibiting an empty "template" GeoPackage and forced producers to add tile or feature data when providing data in using the elevation extension. Because the terms "GeoPackage" and "Extended GeoPackage" were clarified, Requirement #17 was deemed unnecessary and was removed.
-
-==== 309 Deprecate Requirement #9 (1.1.1.2.2)
-This requirement pertains to capabilities of the software library using the GeoPackage. This requirement is out of scope for the GeoPackage Encoding Standard and was therefore deprecated. The associated abstract test was removed.
-
-==== 319, 336, 363 Adding Requirements for Metadata Extension (Annex F.8), Schema Extension (Annex F.9), and CRS WKT Extension (Annex F.10)
-In GeoPackage 1.1, the Metadata and Schema sections were demoted to extensions. However, when this was done no requirement was added to specify the rows in `gpkg_extensions` to declare that the extensions are in use. Similarly, no requirement was added when the CRS WKT Extension was added. This version corrects this oversight by adding requirements #140, #141, and #145 respectively. This is considered a low impact change because most implementers were doing this already.
-
-==== 366 Clarifying Role of Extents in gpkg_contents vs. gpkg_tile_matrix_set
-In the past there has been confusion over the role of the extents in these two tables. In addition to adding informative notes (an administrative change), Requirement #144 was added to mandate that all tiles fall within the extents of the tile matrix set as defined. If this is not done the GeoPackage is not usable anyway so this is a low impact change.
+==== Corrected Trigger
+ CREATE TRIGGER rtree_<t>_<c>_update3 AFTER UPDATE ON <t>
+   WHEN OLD.<i> != NEW.<i> AND
+        (NEW.<c> NOTNULL AND NOT ST_IsEmpty(NEW.<c>))
+ BEGIN
+   DELETE FROM rtree_<t>_<c> WHERE id = OLD.<i>;
+   INSERT OR REPLACE INTO rtree_<t>_<c> VALUES (
+     NEW.<i>,
+     ST_MinX(NEW.<c>), ST_MaxX(NEW.<c>),
+     ST_MinY(NEW.<c>), ST_MaxY(NEW.<c>)
+   );
+ END;
+ 

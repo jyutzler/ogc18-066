@@ -7,15 +7,15 @@
 :sectanchors:
 :source-highlighter: pygments
 
-= Release Notes for OGC GeoPackage Encoding Standard v1.2
+= Release Notes for OGC GeoPackage Encoding Standard v1.2.1
 
-Publication Date: 2017-mm-dd
+Publication Date: 2018-mm-dd
 
-Approval Date: 2017-mm-dd
+Approval Date: 2018-mm-dd
 
-Posted Date: 2017-((xx-xx))
+Posted Date: 2018-((xx-xx))
 
-Reference number of this document: OGC 16-126
+Reference number of this document: OGC 18-024
 
 Reference URL for this document: http://www.opengis.net/doc/PER/t13-((xxx))
 
@@ -23,7 +23,7 @@ Category: Release Notes
 
 Editor: Jeff Yutzler
 
-Title: [big]#Release Notes for GeoPackage v1.2#
+Title: [big]#Release Notes for GeoPackage v1.2.1#
 
 ''''
 
@@ -42,23 +42,6 @@ include::clause-5-critical.adoc[]
 include::clause-6-substantive.adoc[]
 
 include::clause-7-future.adoc[]
-
-////
-add major sections (clauses) as necessary
-////
-
-//include::clause-8-topic.adoc[]
-//include::clause-9-topic.adoc[]
-
-
-////
-add or remove annexes as necessary
-////
-//include::annex-a.adoc[]
-
-//include::annex-b.adoc[]
-
-//include::annex-c.adoc[]
 
 ////
 Revision History should be the last annex before the Bibliography

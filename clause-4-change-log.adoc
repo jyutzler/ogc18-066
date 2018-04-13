@@ -25,271 +25,77 @@ See <<Clause_Critical>> for more information on critical changes and
 ** Usability
 
 
-=== Change Table 1 - Pre-Comment Period
-[[table_change_log1]]
+=== Change Table
+[[table_change_log]]
 .Change Log
 [cols="1a,1a,1a,2a,6a,2a",options="header"]
 |=======================================================================
 |Issue#      |PR#     |Type                 |Section |Description |Purpose
-|https://github.com/opengeospatial/geopackage/pull/209[209]   
-|https://github.com/jyutzler/geopackage/commit/91006d3d61d46ba5d7e01336da7d444882fa2791[91006d3]
-|A
-|1.1.1.1.1
-|Clarify that GeoPackage header is null-terminated
-|Clarity
-|https://github.com/opengeospatial/geopackage/issues/213[213]   
-|https://github.com/opengeospatial/geopackage/pull/227[227]
-|A
-|Annex B.2
-|Add new terms and definitions
-|Clarity
-|https://github.com/opengeospatial/geopackage/issues/214[214]   
-|https://github.com/opengeospatial/geopackage/pull/219[219]
-|A
-|Annex B.11-13
-|Update UML diagrams to show DATETIME where appropriate
-|Consistency
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/221[221]#   
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/251[251]#
-|[yellow-background]#S#
-|[yellow-background]#2.4#
-|[yellow-background]#Adding "attributes" section to describe use of non-spatial data#
-|[yellow-background]#Addition#
-|https://github.com/opengeospatial/geopackage/issues/222[222]   
-|https://github.com/opengeospatial/geopackage/pull/224[224]
-|A
-|1.1.3
-|Rewrite description of gpkg_contents table
-|Clarity
-|https://github.com/opengeospatial/geopackage/issues/228[228]   
-|https://github.com/opengeospatial/geopackage/pull/240[240]
+|https://github.com/opengeospatial/geopackage/issues/382[382]   
+|https://github.com/opengeospatial/geopackage/pull/387[387]
 |A
 |Annex F.8
-|Simplify triggers to avoid failures on row-level entries
-|Usability
-|https://github.com/opengeospatial/geopackage/issues/231[231]   
-|https://github.com/opengeospatial/geopackage/pull/236[236]
+|Update DDL for `gpkg_metadata` table in "Hierarchical Metadata Example One - ISO19115"
+|Correctness
+|https://github.com/opengeospatial/geopackage/issues/390[390]   
+|https://github.com/opengeospatial/geopackage/pull/392[392]
 |A
-|Annex F.9
-|Correct wording in Table #42
+|A.2.1.5.1., Annex F.1
+|Update incorrect table references to Annex G
+|Correctness
+|https://github.com/opengeospatial/geopackage/issues/391[391]   
+|https://github.com/opengeospatial/geopackage/pull/394[394]
+|A
+|1.1.1.1.1
+|Link to limits.html on 140 TB limit
 |Clarity
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/234[234]#   
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/239[239]#
+|https://github.com/opengeospatial/geopackage/issues/395[395]   
+|https://github.com/opengeospatial/geopackage/pull/396[396]
+|A
+|multiple
+|Clarify "non null" constraint for views
+|Clarity
+|N/A 
+|https://github.com/opengeospatial/geopackage/pull/401[401]
+|A
+|Annex F.3
+|Rewrite introduction to extension
+|Clarity
+|https://github.com/opengeospatial/geopackage/issues/402[402]   
+|https://github.com/opengeospatial/geopackage/pull/404[404]
+|A
+|2.1.3.1.1
+|Clarify GeoPackageBinary 'X' bit
+|Clarity
+|N/A 
+|https://github.com/opengeospatial/geopackage/pull/404[404]
+|A
+|Annex F.2, F.4, F.5
+|Providing links to deprecated extensions
+|Readability
+|https://github.com/opengeospatial/geopackage/issues/407[407]   
+|https://github.com/opengeospatial/geopackage/pull/408[408]
+|A
+|2.2.1
+|Fix dangling reference
+|Consistency
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/414[414]#   
+|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/415[415]#
 |[yellow-background]#S#
-|[yellow-background]#Annex F.1#
-|[yellow-background]#Deprecate Requirement #69#
-|[yellow-background]#Usability#
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/235[235]#   
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/239[239]#
-|[yellow-background]#S#
-|[yellow-background]#Annex F.2,4,5#
-|[yellow-background]#Deprecate extensions F.2, F.4, F.5#
-|[yellow-background]#Interoperability#
-|https://github.com/opengeospatial/geopackage/issues/237[237]   
-|https://github.com/opengeospatial/geopackage/pull/236[236]
+|[yellow-background]#Annex F.3#
+|[yellow-background]#Remove erroneous part of trigger#
+|[yellow-background]#Correctness#
+|https://github.com/opengeospatial/geopackage/issues/416[416]   
+|https://github.com/opengeospatial/geopackage/pull/420[420]
 |A
 |2.2.7.1.2
-|Rewrite Requirement #53
+|Clarify tile matrix numbering
 |Clarity
-|https://github.com/opengeospatial/geopackage/issues/238[238]  et. al. 
-|https://github.com/opengeospatial/geopackage/pull/236[236] et. al.
+|N/A 
+|https://github.com/opengeospatial/geopackage/pull/421[421], https://github.com/opengeospatial/geopackage/pull/422[422]
 |A
-|Various
-|Typography
-|Readability
-|https://github.com/opengeospatial/geopackage/issues/241[241]   
-|https://github.com/opengeospatial/geopackage/pull/244[244]
-|A
-|2.3.2.1.1
-|Update description for `definition` column
-|Usability
-|[line-through]#https://github.com/opengeospatial/geopackage/issues/242[242], et. al.#   
-|[line-through]#https://github.com/opengeospatial/geopackage/pull/248[248], et. al.#
-|[line-through]#S#
-|[line-through]#F.11#
-|[line-through]#Add Elevation extension to standard#
-|[line-through]#Addition#
-|https://github.com/opengeospatial/geopackage/issues/243[243]   
-|https://github.com/jyutzler/geopackage/commit/ef2a9a086c581d75ffe2f0a021d37b56a5eee25b[ef2a9a0]
-|A
-|F.8
-|Add default to SQL DDL
-|Consistency
-|https://github.com/opengeospatial/geopackage/issues/245[245]
-|https://github.com/opengeospatial/geopackage/pull/267[267]
-|A
-|Annex B.5-6
-|Change Log
+|Annex F.11
+|Update references to tiled gridded coverage extension
 |Perfunctory
-|https://github.com/opengeospatial/geopackage/issues/254[254]   
-|https://github.com/opengeospatial/geopackage/pull/268[268]
-|A
-|2.3.2.1.1
-|Updating rules for extensions in Requirement 58
-|Clarity
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/255[255], https://github.com/opengeospatial/geopackage/issues/266[266]#   
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/264[264], https://github.com/opengeospatial/geopackage/pull/273[273]#
-|[yellow-background]#S#
-|[yellow-background]#1.1.1.1.1, Annex A#
-|[yellow-background]#Update versioning mechanism, allow for version increments in SQLite header#
-|[yellow-background]#Interoperability#
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/258[258]#   
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/236[236]#
-|[yellow-background]#S#
-|[yellow-background]#Annex F.10#
-|[yellow-background]#Correct column name for CRS WKT Extension#
-|[yellow-background]#Consistency#
-|https://github.com/opengeospatial/geopackage/issues/260[260]   
-|https://github.com/opengeospatial/geopackage/pull/263[263]   
-|A
-|Annex F.9
-|Correct _min/max_is_inclusive_ in abstract tests
-|Consistency
-|https://github.com/opengeospatial/geopackage/issues/261[261]
-|https://github.com/opengeospatial/geopackage/pull/264[264]
-|A
-|1.1.1.1.2
-|Eliminate .gpkx option
-|Usability
 |=======================================================================
 
-
-=== Change Table 2 - Post-Comment Period
-[[table_change_log2]]
-.Change Log 2
-[cols="1a,1a,1a,2a,6a,2a",options="header"]
-|=======================================================================
-|Issue#      |PR#     |Type                 |Section |Description |Purpose
-|https://github.com/opengeospatial/geopackage/issues/279[279] et. al.
-|https://github.com/opengeospatial/geopackage/pull/280[280] et. al.
-|A
-|Annex A
-|Update abstract tests to align with requirements
-|Consistency
-|https://github.com/opengeospatial/geopackage/issues/282[282]
-|https://github.com/opengeospatial/geopackage/pull/283[283]
-|A
-|Annex A, Annex D.2
-|Update DDL to enforce that primary keys are not null
-|Consistency
-|286
-|292
-|A
-|2.1.5.1.1, Annex A
-|Add Null column to Table 7, update ATS to use PRAGMAs instead of SQL inspection
-|Consistency
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/295[295]#
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/296[296]#
-|[yellow-background]#S#
-|[yellow-background]#2.2.6.1.2, 2.2.7.1.2, Annex A#
-|[yellow-background]#Remove "tiles" stipulation in Requirements 39/43 so that extensions can use the tiles tables#
-|[yellow-background]#Extensibility#
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/301[301]#
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/302[302] et. al.#
-|[yellow-background]#S#
-|[yellow-background]#Various#
-|[yellow-background]#Comments from Carl Reed, including but not limited to clarifications on extension mechanism#
-|[yellow-background]#Clarity, Consistency, Readability, Interoperability#
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/309[309]#
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/312[312]#
-|[yellow-background]#S#
-|[yellow-background]#1.1.1.2.2, Annex A#
-|[yellow-background]#Remove Requirement 9 because it is is a software capability, not a file encoding capability#
-|[yellow-background]#Consistency#
-|https://github.com/opengeospatial/geopackage/issues/314[314]
-|https://github.com/opengeospatial/geopackage/pull/315[315], https://github.com/opengeospatial/geopackage/pull/324[324]
-|A 
-|2, Annex F
-|Use registered requirements numbers instead of auto-generated ones.
-|Consistency
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/319[319]#
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/320[320]#
-|[yellow-background]#S#
-|[yellow-background]#F.8#
-|[yellow-background]#Editorial review of Metadata Extension#
-|[yellow-background]#Consistency#
-|https://github.com/opengeospatial/geopackage/issues/322[322]
-|https://github.com/opengeospatial/geopackage/pull/326[326]
-|A 
-|2.2.3.1.1 Table 11, 2.2.3.1.2
-|Rewrite Requirement 60, specify that columns are jointly unique
-|Clarity
-|https://github.com/opengeospatial/geopackage/issues/332[332]
-|https://github.com/opengeospatial/geopackage/pull/334[334]
-|A 
-|F.10, Table 26
-|Add a default in case extension is present in a file used by an application that doesn't understand it
-|Interoperability
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/336[336]#
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/337[337]#
-|[yellow-background]#S#
-|[yellow-background]#F.9#
-|[yellow-background]#Editorial review of Schema Extension#
-|[yellow-background]#Consistency#
-|https://github.com/opengeospatial/geopackage/issues/341[341]
-|https://github.com/opengeospatial/geopackage/pull/342[342]
-|A 
-|F.3
-|Editorial review of RTree Spatial Index Extension
-|Consistency
-|https://github.com/opengeospatial/geopackage/issues/345[345]
-|https://github.com/opengeospatial/geopackage/pull/346[346]
-|A 
-|F.7
-|Editorial review of WebP Extension
-|Consistency
-|https://github.com/opengeospatial/geopackage/issues/347[347]
-|https://github.com/opengeospatial/geopackage/pull/348[348]
-|A 
-|F.1
-|Editorial review of Non-Linear Geometry Types Extension
-|Consistency
-|https://github.com/opengeospatial/geopackage/issues/351[351]
-|https://github.com/opengeospatial/geopackage/pull/352[352]
-|A 
-|2.2.1
-|Editorial review of Tiles introduction, including adding explicit reference to WMTS in response to official comment from Keith Ryden
-|Consistency
-|https://github.com/opengeospatial/geopackage/issues/356[356]
-|https://github.com/opengeospatial/geopackage/pull/357[357]
-|A 
-|Annex I
-|Updating reference to ISO 19115
-|Perfunctory
-|https://github.com/opengeospatial/geopackage/issues/358[358]
-|https://github.com/opengeospatial/geopackage/pull/371[371]
-|A 
-|2.2.8.1.1
-|Editing Table 10 to remove default values for zoom_level, tile_column, and tile_row
-|Consistency
-|https://github.com/opengeospatial/geopackage/issues/362[362]
-|https://github.com/opengeospatial/geopackage/pull/368[368]
-|A 
-|2.2.5, Annex F.7
-|Editing Requirement 92, adding notes indicating that PNG/JPG tiles (or WebP) can be mixed and matched
-|Clarity
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/363[363]#
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/369[369]#
-|[yellow-background]#S# 
-|[yellow-background]#Annex F.10#
-|[yellow-background]#Adding requirement for gpkg_extensions when CRS WKT extension is in use#
-|[yellow-background]#Consistency#
-|https://github.com/opengeospatial/geopackage/issues/375[375]
-|https://github.com/opengeospatial/geopackage/pull/378[378]
-|A 
-|2.3.2.1.2, Annex A.2.3.1.1
-|Adding explanatory text regarding table name case sensitivity
-|Clarity
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/366[366]#
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/367[367]#
-|[yellow-background]#S# 
-|[yellow-background]#2.2.1#
-|[yellow-background]#Clarifying role of extents in gpkg_contents vs. gpkg_tile_matrix_set#
-|[yellow-background]#Clarity#
-|N/A
-|https://github.com/opengeospatial/geopackage/pull/376[376]
-|A 
-|3
-|Added new security consideration related to SQLite
-|Perfunctory
-|=======================================================================

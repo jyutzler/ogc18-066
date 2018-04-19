@@ -97,5 +97,11 @@ See <<Clause_Critical>> for more information on critical changes and
 |Annex F.11
 |Update references to tiled gridded coverage extension
 |Perfunctory
+|N/A 
+|https://github.com/opengeospatial/geopackage/pull/421[427]
+|A
+|Annex F.9
+|Updating Table 19 to fix typos and improve clarity
+|Clarity
 |=======================================================================
 

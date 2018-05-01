@@ -34,3 +34,5 @@ The executable test suite for GeoPackage has been updated to accept either the o
    );
  END;
  
+=== Updating R140, R141, and R145 to indicate required rows and column values (Annex F.8, F.9, and F.10)
+One intent of the GeoPackage Encoding Standard was for GeoPackage contents (particularly tables) to be self-discoverable. Some tables are defined by the core standard, some tables are user defined (and therefore described by `gpkg_contents`), and some are added as part of extensions. In GeoPackage 1.2.0 and before, the way to describe tables added as part of extensions was not clearly specified. In the http://docs.opengeospatial.org/is/17-066r1/17-066r1.html[OGC GeoPackage Extension for Tiled Gridded Coverage Data], each required table is explicitly identified in the `gpkg_extensions` table. This change was made to apply this same technique consistently across extensions. This is a largely cosmetic change that will not have any impact on interoperability.

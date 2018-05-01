@@ -103,5 +103,11 @@ See <<Clause_Critical>> for more information on critical changes and
 |Annex F.9
 |Updating Table 19 to fix typos and improve clarity
 |Clarity
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/426[426]#   
+|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/430[430]#
+|[yellow-background]#S#
+|[yellow-background]#Annexes F.8, F.9, F.10#
+|[yellow-background]#Update R140, R141, and R145 to indicate required rows and column values#
+|[yellow-background]#Consistency#
 |=======================================================================
 

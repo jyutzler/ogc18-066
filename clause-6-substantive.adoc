@@ -4,7 +4,7 @@
 === Removing erroneous part of trigger (Annex F.3)
 The `update3` trigger for the RTree Spatial Index extension needs to have the “of ” portion struck. As originally written, the `update3` trigger will only fire when the geometry is actually updated because of the “of ” clause – the key action this trigger is designed to handle is when the ID is changed – it can also deal with a geometry change at the same time – but as written will not fire if only the ID is changed.
 
-This has not surfaced in the field because most SQLite applications never change the internal id value of an existing row. However, by issuing this correction, we prevent an problem that would be hard to debug in the field.
+This change does not introduce any risks to interoperability. However, by issuing this correction, we prevent an problem that could arise in the field and would be hard to debug. There have not been any reports of this problem in the field to date because most SQLite applications never change the internal id value of an existing row. 
 
 The executable test suite for GeoPackage has been updated to accept either the original or corrected version of the trigger for GeoPackage versions 1.2.0 and earlier. Versions 1.2.1 and later are required to use the corrected trigger.
 

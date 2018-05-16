@@ -101,7 +101,7 @@ See <<Clause_Critical>> for more information on critical changes and
 |https://github.com/opengeospatial/geopackage/pull/421[427]
 |A
 |Annex F.9
-|Updating Table 19 to fix typos and improve clarity
+|Update Table 19 to fix typos and improve clarity
 |Clarity
 |[yellow-background]#https://github.com/opengeospatial/geopackage/issues/426[426]#   
 |[yellow-background]#https://github.com/opengeospatial/geopackage/pull/430[430]#
@@ -109,5 +109,11 @@ See <<Clause_Critical>> for more information on critical changes and
 |[yellow-background]#Annexes F.8, F.9, F.10#
 |[yellow-background]#Update R140, R141, and R145 to indicate required rows and column values#
 |[yellow-background]#Consistency#
+|https://github.com/opengeospatial/geopackage/issues/432[432]   
+|https://github.com/opengeospatial/geopackage/pull/433[433]
+|A
+|1.1.3.1.1
+|Clarify use of extents in gpkg_contents with tiles content
+|Clarity
 |=======================================================================
 

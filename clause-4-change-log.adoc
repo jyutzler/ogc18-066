@@ -98,7 +98,7 @@ See <<Clause_Critical>> for more information on critical changes and
 |Update references to tiled gridded coverage extension
 |Perfunctory
 |N/A 
-|https://github.com/opengeospatial/geopackage/pull/421[427]
+|https://github.com/opengeospatial/geopackage/pull/427[427]
 |A
 |Annex F.9
 |Update Table 19 to fix typos and improve clarity
@@ -127,5 +127,11 @@ See <<Clause_Critical>> for more information on critical changes and
 |Annexes F.1, F.6
 |Correcting incorrect ATS references
 |Correctness
+|N/A 
+|https://github.com/opengeospatial/geopackage/pull/441[441]
+|A
+|Annex F.3
+|Remove ATS entry associated with removed requirement
+|Perfunctory
 |=======================================================================
 

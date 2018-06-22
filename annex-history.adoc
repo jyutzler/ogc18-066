@@ -5,6 +5,5 @@
 [width="90%",options="header"]
 |====================
 |Date |Release |Editor | Primary clauses modified |Descriptions
-|April 13, 2018 |J. Yutzler | .1 |all |initial version
-|May 17, 2018 |J. Yutzler | .9 |4, 6 |pre-release version
+|June 29, 2018 |J. Yutzler | .1 |all |initial version
 |====================

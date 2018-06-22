@@ -7,7 +7,7 @@
 :sectanchors:
 :source-highlighter: pygments
 
-= Release Notes for OGC GeoPackage Encoding Standard v1.2.1
+= Release Notes for OGC GeoPackage Encoding Standard v1.3.0
 
 Publication Date: 2018-mm-dd
 
@@ -15,7 +15,7 @@ Approval Date: 2018-mm-dd
 
 Posted Date: 2018-((xx-xx))
 
-Reference number of this document: OGC 18-024
+Reference number of this document: OGC 18-066
 
 Reference URL for this document: http://www.opengis.net/doc/PER/t13-((xxx))
 
@@ -23,7 +23,7 @@ Category: Release Notes
 
 Editor: Jeff Yutzler
 
-Title: [big]#Release Notes for GeoPackage v1.2.1#
+Title: [big]#Release Notes for GeoPackage v1.3.0#
 
 ''''
 

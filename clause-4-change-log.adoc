@@ -31,107 +31,17 @@ See <<Clause_Critical>> for more information on critical changes and
 [cols="1a,1a,1a,2a,6a,2a",options="header"]
 |=======================================================================
 |Issue#      |PR#     |Type                 |Section |Description |Purpose
-|https://github.com/opengeospatial/geopackage/issues/382[382]   
-|https://github.com/opengeospatial/geopackage/pull/387[387]
-|A
-|Annex F.8
-|Update DDL for `gpkg_metadata` table in "Hierarchical Metadata Example One - ISO19115"
-|Correctness
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/444[444]#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/447[447]#
+|[yellow-background]#S#
+|[yellow-background]#2.1.5.1.2, 2.2.6.1.2#
+|[yellow-background]#Enforce alignment of SRS IDs between tables#
+|[yellow-background]#Consistency#
 |https://github.com/opengeospatial/geopackage/issues/390[390]   
 |https://github.com/opengeospatial/geopackage/pull/392[392]
 |A
 |A.2.1.5.1., Annex F.1
 |Update incorrect table references to Annex G
 |Correctness
-|https://github.com/opengeospatial/geopackage/issues/391[391]   
-|https://github.com/opengeospatial/geopackage/pull/394[394]
-|A
-|1.1.1.1.1
-|Link to limits.html on 140 TB limit
-|Clarity
-|https://github.com/opengeospatial/geopackage/issues/395[395]   
-|https://github.com/opengeospatial/geopackage/pull/396[396]
-|A
-|multiple
-|Clarify "non null" constraint for views
-|Clarity
-|N/A 
-|https://github.com/opengeospatial/geopackage/pull/401[401]
-|A
-|Annex F.3
-|Rewrite introduction to extension
-|Clarity
-|https://github.com/opengeospatial/geopackage/issues/402[402]   
-|https://github.com/opengeospatial/geopackage/pull/404[404]
-|A
-|2.1.3.1.1
-|Clarify GeoPackageBinary 'X' bit
-|Clarity
-|N/A 
-|https://github.com/opengeospatial/geopackage/pull/404[404]
-|A
-|Annex F.2, F.4, F.5
-|Providing links to deprecated extensions
-|Readability
-|https://github.com/opengeospatial/geopackage/issues/407[407]   
-|https://github.com/opengeospatial/geopackage/pull/408[408]
-|A
-|2.2.1
-|Fix dangling reference
-|Consistency
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/414[414]#   
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/415[415]#
-|[yellow-background]#S#
-|[yellow-background]#Annex F.3#
-|[yellow-background]#Remove erroneous part of trigger#
-|[yellow-background]#Correctness#
-|https://github.com/opengeospatial/geopackage/issues/416[416]   
-|https://github.com/opengeospatial/geopackage/pull/420[420]
-|A
-|2.2.7.1.2
-|Clarify tile matrix numbering
-|Clarity
-|N/A 
-|https://github.com/opengeospatial/geopackage/pull/421[421], https://github.com/opengeospatial/geopackage/pull/422[422]
-|A
-|Annex F.11
-|Update references to tiled gridded coverage extension
-|Perfunctory
-|N/A 
-|https://github.com/opengeospatial/geopackage/pull/427[427]
-|A
-|Annex F.9
-|Update Table 19 to fix typos and improve clarity
-|Clarity
-|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/426[426]#   
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/430[430]#
-|[yellow-background]#S#
-|[yellow-background]#Annexes F.8, F.9, F.10#
-|[yellow-background]#Update R140, R141, and R145 to indicate required rows and column values#
-|[yellow-background]#Consistency#
-|https://github.com/opengeospatial/geopackage/issues/432[432]   
-|https://github.com/opengeospatial/geopackage/pull/433[433]
-|A
-|1.1.3.1.1
-|Clarify use of extents in gpkg_contents with tiles content
-|Clarity
-|https://github.com/opengeospatial/geopackage/issues/436[436]
-|https://github.com/opengeospatial/geopackage/pull/440[440]
-|A
-|multiple
-|Replace instances of GEOMCOLLECTION with GEOMETRYCOLLECTION 
-|Consistency
-|https://github.com/opengeospatial/geopackage/issues/437[437]
-|https://github.com/opengeospatial/geopackage/pull/439[439]
-|A
-|Annexes F.1, F.6
-|Correcting incorrect ATS references
-|Correctness
-|N/A 
-|https://github.com/opengeospatial/geopackage/pull/441[441]
-|A
-|Annex F.3
-|Remove ATS entry associated with removed requirement
-|Perfunctory
 |=======================================================================
 

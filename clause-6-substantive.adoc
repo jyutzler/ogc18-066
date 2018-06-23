@@ -1,38 +1,5 @@
 [[Clause_Substantive]]
 == Description of Substantive Changes
 
-=== Removing erroneous part of trigger (Annex F.3)
-The `update3` trigger for the RTree Spatial Index extension needs to have the “of ” portion struck. As originally written, the `update3` trigger will only fire when the geometry is actually updated because of the “of ” clause – the key action this trigger is designed to handle is when the ID is changed – it can also deal with a geometry change at the same time – but as written will not fire if only the ID is changed.
-
-This change does not introduce any risks to interoperability. However, by issuing this correction, we prevent an problem that could arise in the field and would be hard to debug. There have not been any reports of this problem in the field to date because most SQLite applications never change the internal id value of an existing row. 
-
-The executable test suite for GeoPackage has been updated to accept either the original or corrected version of the trigger for GeoPackage versions 1.2.0 and earlier. Versions 1.2.1 and later are required to use the corrected trigger.
-
-==== Original Trigger
- CREATE TRIGGER rtree_<t>_<c>_update3 AFTER UPDATE OF <c> ON <t>
-   WHEN OLD.<i> != NEW.<i> AND
-        (NEW.<c> NOTNULL AND NOT ST_IsEmpty(NEW.<c>))
- BEGIN
-   DELETE FROM rtree_<t>_<c> WHERE id = OLD.<i>;
-   INSERT OR REPLACE INTO rtree_<t>_<c> VALUES (
-     NEW.<i>,
-     ST_MinX(NEW.<c>), ST_MaxX(NEW.<c>),
-     ST_MinY(NEW.<c>), ST_MaxY(NEW.<c>)
-   );
- END;
-
-==== Corrected Trigger
- CREATE TRIGGER rtree_<t>_<c>_update3 AFTER UPDATE ON <t>
-   WHEN OLD.<i> != NEW.<i> AND
-        (NEW.<c> NOTNULL AND NOT ST_IsEmpty(NEW.<c>))
- BEGIN
-   DELETE FROM rtree_<t>_<c> WHERE id = OLD.<i>;
-   INSERT OR REPLACE INTO rtree_<t>_<c> VALUES (
-     NEW.<i>,
-     ST_MinX(NEW.<c>), ST_MaxX(NEW.<c>),
-     ST_MinY(NEW.<c>), ST_MaxY(NEW.<c>)
-   );
- END;
- 
-=== Updating R140, R141, and R145 to indicate required rows and column values (Annex F.8, F.9, and F.10)
-One intent of the GeoPackage Encoding Standard was for GeoPackage contents (particularly tables) to be self-discoverable. Some tables are defined by the core standard, some tables are user defined (and therefore described by `gpkg_contents`), and some are added as part of extensions. In GeoPackage 1.2.0 and before, the way to describe tables added as part of extensions was not clearly specified. In the http://docs.opengeospatial.org/is/17-066r1/17-066r1.html[OGC GeoPackage Extension for Tiled Gridded Coverage Data], each required table is explicitly identified in the `gpkg_extensions` table. This change was made to apply this same technique consistently across extensions. This is a largely cosmetic change that will not have any impact on interoperability.
+=== Enforce alignment of SRS IDs between tables (2.1.5.1.2 and 2.2.6.1.2)
+This change creates two new requirements, R146 and R147, that requires SRS IDs to be consistent between `gpkg_contents` and the two dependent tables, `gpkg_geometry_columns` and `gpkg_tile_matrix_set`. In previous versions, this was unspecified. This ambiguity creates a potential interoperability issue because client software could confuse the values if they are different. This change also includes an explanatory note in section 1.1.3.1.2 and new abstract tests in Annex A.

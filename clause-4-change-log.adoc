@@ -37,11 +37,11 @@ See <<Clause_Critical>> for more information on critical changes and
 |[yellow-background]#2.1.5.1.2, 2.2.6.1.2#
 |[yellow-background]#Enforce alignment of SRS IDs between tables#
 |[yellow-background]#Consistency#
-|https://github.com/opengeospatial/geopackage/issues/390[390]   
-|https://github.com/opengeospatial/geopackage/pull/392[392]
+|https://github.com/opengeospatial/geopackage/issues/445[445]   
+|https://github.com/opengeospatial/geopackage/pull/448[448]
 |A
-|A.2.1.5.1., Annex F.1
-|Update incorrect table references to Annex G
-|Correctness
+|2.1.6.1.2., Annex A
+|Eliminate misleading "assignable" language
+|Clarity
 |=======================================================================
 

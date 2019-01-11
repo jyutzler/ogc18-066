@@ -44,10 +44,16 @@ See <<Clause_Critical>> for more information on critical changes and
 |Eliminate misleading "assignable" language
 |Clarity
 |https://github.com/opengeospatial/geopackage/issues/455[455]   
-|https://github.com/opengeospatial/geopackage/pull/456[456]
+|https://github.com/opengeospatial/geopackage/pull/477[477]
 |A
 |multiple
 |Update table and figure styles
 |Readability
+|N/A   
+|https://github.com/opengeospatial/geopackage/pull/463[463]
+|A
+|Annex F.8
+|Fix typo in trigger definition SQL
+|Correctness
 |=======================================================================
 

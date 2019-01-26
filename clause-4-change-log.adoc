@@ -37,6 +37,12 @@ See <<Clause_Critical>> for more information on critical changes and
 |[yellow-background]#2.1.5.1.2, 2.2.6.1.2#
 |[yellow-background]#Enforce alignment of SRS IDs between tables#
 |[yellow-background]#Consistency#
+|https://github.com/opengeospatial/geopackage/issues/381[381]   
+|https://github.com/opengeospatial/geopackage/pull/479[479]
+|A
+|1.1.1.1.2.
+|Mention new media type
+|Informational
 |https://github.com/opengeospatial/geopackage/issues/445[445]   
 |https://github.com/opengeospatial/geopackage/pull/448[448]
 |A

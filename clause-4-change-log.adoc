@@ -61,5 +61,11 @@ See <<Clause_Critical>> for more information on critical changes and
 |Annex F.8
 |Fix typo in trigger definition SQL
 |Correctness
+|N/A   
+|https://github.com/opengeospatial/geopackage/pull/483[483]
+|A
+|1.1.1.1.1
+|Bump version number
+|Perfunctory
 |=======================================================================
 

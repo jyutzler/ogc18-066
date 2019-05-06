@@ -3,3 +3,11 @@
 
 === Enforce alignment of SRS IDs between tables (2.1.5.1.2 and 2.2.6.1.2)
 This change creates two new requirements, R146 and R147, that requires SRS IDs to be consistent between `gpkg_contents` and the two dependent tables, `gpkg_geometry_columns` and `gpkg_tile_matrix_set`. In previous versions, this was unspecified. This ambiguity creates a potential interoperability issue because client software could confuse the values if they are different. This change also includes an explanatory note in section 1.1.3.1.2 and new abstract tests in Annex A.
+
+=== Clarify use of views in user-defined tables (2.1.6.1.1, 2.2.8.1.1, and 2.4.3.1.1)
+This change adds two new requirements, R150 and R151, to specify the rules for primary keys or primary-key like columns in user-defined features and attributes tables, respectively.
+While user-defined tables should have primary keys in general, the concept of primary keys does not exist in SQLite for views.
+These new requirements establish a new option for implementers.
+User-defined components that lack primary keys (presumably because they are views) must have a primary-key-like column (containing unique integers) as the first column. 
+In previous GeoPackage versions, how to encode a view was unclear.
+This change also includes an explanatory note with a similar message for tiles views.

@@ -4,7 +4,7 @@
 
 GeoPackage is an open, standards-based, platform-independent, portable, self-describing, compact format for transferring geospatial information.
 
-Over the course of 2018, the GeoPackage Standards Working Group (SWG) made a number of changes to the GeoPackage Encoding Standard Version 1.2 (OGC 12-128r14). These changes have been aggregated into version 1.3.0 of the GeoPackage Encoding Standard (12-128r16). This document describes those changes. 
+Over the course of 2018 and 2019, the GeoPackage Standards Working Group (SWG) made a number of changes to the GeoPackage Encoding Standard Version 1.2.1 (OGC 12-128r15). These changes have been aggregated into version 1.3.0 of the GeoPackage Encoding Standard (12-128r16). This document describes those changes. 
 
 GeoPackage 1.3.0 is a minor revision to version 1.2.1.  The minor revision designation is being used because of a number of substantive changes that alter conformance requirements. However, all of these changes were carefully considered for impact on existing implementations. Changes that were considered to have a significant impact were rejected or recast in order to limit their impact. 
 

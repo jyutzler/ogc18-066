@@ -60,7 +60,7 @@ See <<Clause_Critical>> for more information on critical changes and
 |multiple
 |Update table and figure styles
 |Readability
-|N/A   
+|N/A
 |https://github.com/opengeospatial/geopackage/pull/463[463]
 |A
 |Annex F.8
@@ -72,7 +72,7 @@ See <<Clause_Critical>> for more information on critical changes and
 |2.2.8.1.1
 |Add warning regarding need for indexing on large tiles tables
 |Performance
-|N/A   
+|N/A
 |https://github.com/opengeospatial/geopackage/pull/483[483]
 |A
 |1.1.1.1.1
@@ -84,5 +84,11 @@ See <<Clause_Critical>> for more information on critical changes and
 |F.3
 |Added note to state intent of bounding indexes since R78 was removed; Remove test for R78; 
 |Correctness
+|N/A
+|https://github.com/opengeospatial/geopackage/pull/488[488]
+|A
+|F.12
+|Adding link to Related Tables Extension
+|Perfunctory
 |=======================================================================
 

@@ -90,5 +90,11 @@ See <<Clause_Critical>> for more information on critical changes and
 |F.12
 |Adding link to Related Tables Extension
 |Perfunctory
+|N/A
+|https://github.com/opengeospatial/geopackage/pull/489[489]
+|A
+|2.3.2.1.2
+|Correcting typo: scope was "write_only" and should be "write-only"
+|Correctness
 |=======================================================================
 

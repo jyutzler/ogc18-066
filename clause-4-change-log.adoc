@@ -50,10 +50,11 @@ See <<Clause_Critical>> for more information on critical changes and
 |Eliminate misleading "assignable" language
 |Clarity
 |[yellow-background]#https://github.com/opengeospatial/geopackage/issues/446[446]#
-|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/449[449]#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/449[449] and https://github.com/opengeospatial/geopackage/pull/494[494]#
 |[yellow-background]#S#
 |[yellow-background]#2.1.6.1.1, 2.2.8.1.1, 2.4.3.1.1#
 |[yellow-background]#Clarify use of views in user-defined tables#
+|[yellow-background]#Consistency#
 |https://github.com/opengeospatial/geopackage/issues/455[455]   
 |https://github.com/opengeospatial/geopackage/pull/477[477]
 |A
@@ -96,5 +97,11 @@ See <<Clause_Critical>> for more information on critical changes and
 |2.3.2.1.2
 |Correcting typo: scope was "write_only" and should be "write-only"
 |Correctness
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/495[496]#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/496[496]#
+|[yellow-background]#S#
+|[yellow-background]#Annex F.8#
+|[yellow-background]#Allow metadata scopes to be extended#
+|[yellow-background]#Extensibility#
 |=======================================================================
 

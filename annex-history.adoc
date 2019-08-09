@@ -6,5 +6,6 @@
 |====================
 |Date |Release |Editor | Primary clauses modified |Descriptions
 |June 29, 2018 |J. Yutzler | .1 |all |initial version
-|May 6, 2019   |J. Yutzler   |.9   |all   |pre-release version
+|May 6, 2019   |J. Yutzler   |.2   |all   |release candidate #1
+|August 9, 2019   |J. Yutzler   |.3   |all   |results of SWG electronic vote
 |====================

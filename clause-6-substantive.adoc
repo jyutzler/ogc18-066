@@ -11,3 +11,15 @@ These new requirements establish a new option for implementers.
 User-defined components that lack primary keys (presumably because they are views) must have a primary-key-like column (containing unique integers) as the first column. 
 In previous GeoPackage versions, how to encode a view was unclear.
 This change also includes an explanatory note with a similar message for tiles views.
+
+=== Allow Metadata Scopes to be extended (Annex F.8)
+This change eliminates the Trigger Definition SQL from the Metadata Extension.
+As long as those triggers are there, it is not possible to add new scopes to a GeoPackage.
+Trigger constraints were eliminated from the rest of the encoding standard before reaching v1.0.
+Why these particular trigger constraints remained is unclear.
+The rigidity imposed by these constraints is a clear violation of Requirement 25 of the OGC's link:https://portal.opengeospatial.org/files/?artifact_id=34762[Standard for Modular Specifications] that governs this SWG.
+Eliminating these triggers would allow logically-valid extension of the metadata scope list as called for by Requirement 25. 
+
+This change also adds a new metadata scope for "style".
+The list of metadata scopes that is currently in link:http://www.geopackage.org/spec121/#metadata_scopes[Table 21] is arbitrary and is clearly not limited to the scopes from ISO19115.
+Since OGC Testbed-15 identified a need for a new scope, it has been added.

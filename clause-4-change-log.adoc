@@ -55,6 +55,12 @@ See <<Clause_Critical>> for more information on critical changes and
 |[yellow-background]#2.1.6.1.1, 2.2.8.1.1, 2.4.3.1.1#
 |[yellow-background]#Clarify use of views in user-defined tables#
 |[yellow-background]#Consistency#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/issues/453[453]#
+|[yellow-background]#https://github.com/opengeospatial/geopackage/pull/454[454]#
+|[yellow-background]#S#
+|[yellow-background]#F.9#
+|[yellow-background]#Relax R104 to allow use with attributes and extensions#
+|[yellow-background]#Extensibility#
 |https://github.com/opengeospatial/geopackage/issues/455[455]   
 |https://github.com/opengeospatial/geopackage/pull/477[477]
 |A

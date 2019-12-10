@@ -23,3 +23,9 @@ Eliminating these triggers would allow logically-valid extension of the metadata
 This change also adds a new metadata scope for "style".
 The list of metadata scopes that is currently in link:http://www.geopackage.org/spec121/#metadata_scopes[Table 21] is arbitrary and is clearly not limited to the scopes from ISO19115.
 Since OGC Testbed-15 identified a need for a new scope, it has been added.
+
+=== Allow Schemas to be used with Attributes and Extensions (Annex F.9)
+The original schema extension stated that schemas are for features layers.
+This change loosens the restriction so that a schema may apply to attributes or extensions.
+This required a change to R104 which originally specified that the "table_name" from `gpkg_data_columns` must have a corresponding row in `gpkg_contents`.
+Since some extension tables are described in `gpkg_extensions`, the requirement was loosened so that the corresponding row must be in either table.
